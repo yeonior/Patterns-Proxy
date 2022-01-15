@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A2637B1A27933796007BEC59 /* Proxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2637B1927933796007BEC59 /* Proxy.swift */; };
 		A28B8822279308B700CA8A14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28B8821279308B700CA8A14 /* AppDelegate.swift */; };
 		A28B8824279308B700CA8A14 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28B8823279308B700CA8A14 /* SceneDelegate.swift */; };
 		A28B8826279308B700CA8A14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28B8825279308B700CA8A14 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A2637B1927933796007BEC59 /* Proxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proxy.swift; sourceTree = "<group>"; };
 		A28B881E279308B700CA8A14 /* Patterns-Proxy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Patterns-Proxy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A28B8821279308B700CA8A14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A28B8823279308B700CA8A14 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			children = (
 				A28B8821279308B700CA8A14 /* AppDelegate.swift */,
 				A28B8823279308B700CA8A14 /* SceneDelegate.swift */,
+				A2637B1927933796007BEC59 /* Proxy.swift */,
 				A28B883B2793365F00CA8A14 /* LoadService */,
 				A28B8825279308B700CA8A14 /* ViewController.swift */,
 				A28B8835279309CE00CA8A14 /* DetailViewController.swift */,
@@ -158,6 +161,7 @@
 				A28B88382793344000CA8A14 /* LoadServiceProtocol.swift in Sources */,
 				A28B883A279334B100CA8A14 /* LoadService.swift in Sources */,
 				A28B8826279308B700CA8A14 /* ViewController.swift in Sources */,
+				A2637B1A27933796007BEC59 /* Proxy.swift in Sources */,
 				A28B8822279308B700CA8A14 /* AppDelegate.swift in Sources */,
 				A28B8824279308B700CA8A14 /* SceneDelegate.swift in Sources */,
 				A28B8836279309CE00CA8A14 /* DetailViewController.swift in Sources */,
