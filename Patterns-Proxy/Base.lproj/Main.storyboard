@@ -21,7 +21,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Open photo"/>
                                 <connections>
-                                    <segue destination="vPE-IF-Xu3" kind="showDetail" id="5ax-fo-TqO"/>
+                                    <segue destination="vPE-IF-Xu3" kind="show" id="5ax-fo-TqO"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -43,14 +43,17 @@
             <objects>
                 <viewController id="vPE-IF-Xu3" customClass="DetailViewController" customModule="Patterns_Proxy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="C2k-k9-4jf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DpG-Rl-J2v">
-                                <rect key="frame" x="87" y="245" width="240" height="240"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DpG-Rl-J2v">
+                                <rect key="frame" x="87" y="333" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="DpG-Rl-J2v" secondAttribute="height" multiplier="1:1" id="AUo-9d-2EV"/>
+                                </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u8n-Kl-SuV">
-                                <rect key="frame" x="150.5" y="551" width="113" height="31"/>
+                                <rect key="frame" x="150.5" y="605" width="113" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Update photo"/>
                                 <connections>
@@ -65,10 +68,11 @@
                             <constraint firstItem="DpG-Rl-J2v" firstAttribute="leading" secondItem="mt6-tt-dLO" secondAttribute="leading" constant="87" id="BrG-53-ipJ"/>
                             <constraint firstItem="mt6-tt-dLO" firstAttribute="bottom" secondItem="u8n-Kl-SuV" secondAttribute="bottom" constant="226" id="QEf-cT-zfm"/>
                             <constraint firstItem="DpG-Rl-J2v" firstAttribute="top" secondItem="mt6-tt-dLO" secondAttribute="top" constant="245" id="agj-hN-kQP"/>
-                            <constraint firstItem="u8n-Kl-SuV" firstAttribute="top" secondItem="DpG-Rl-J2v" secondAttribute="bottom" constant="66" id="mqJ-vA-gq5"/>
+                            <constraint firstItem="u8n-Kl-SuV" firstAttribute="top" secondItem="DpG-Rl-J2v" secondAttribute="bottom" constant="32" id="mqJ-vA-gq5"/>
                             <constraint firstItem="u8n-Kl-SuV" firstAttribute="centerX" secondItem="C2k-k9-4jf" secondAttribute="centerX" id="tcA-fF-JHY"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="vCx-E9-iVY"/>
                     <connections>
                         <outlet property="photoImageView" destination="DpG-Rl-J2v" id="cbD-8t-9p9"/>
                     </connections>

@@ -18,7 +18,7 @@ class Proxy: LoadServiceProtocol {
     }
     
     func loadPhoto(url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
-        if cacheData != nil {
+        if cacheData == nil {
             service.loadPhoto(url: url, completion: { data, response, error in
                 cacheData = data
                 completion(data, response, error)
