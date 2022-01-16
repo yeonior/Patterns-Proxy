@@ -33,6 +33,8 @@ class DetailViewController: UIViewController {
     }
     
     @IBAction func updatePhotoButtonDidTapped(_ sender: UIButton) {
-        
+        cacheData = nil
+        photoImageView.image = nil
+        loadPhoto()
     }
 }
